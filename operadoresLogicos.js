@@ -12,7 +12,7 @@ searchButton.addEventListener("click", function() {
     for (let i = 0; i < contacts.length; i++) {
         let contact = contacts[i];
 
-        if (input.value === contact.name) {
+        if (input.value.toLowerCase() === contact.name.toLowerCase()) {
             div.innerHTML = `Name: ${contact.name}, Phone: ${contact.phone}`;
         }
     }
